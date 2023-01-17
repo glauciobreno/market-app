@@ -1,3 +1,12 @@
+# Projeto de um Market consumindo a api do Mercado Livre
+
+## Tecnologias utilizadas até o momento:
+- ReactJs
+- Styled Components
+
+obs.: Projeto está em andamento
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
