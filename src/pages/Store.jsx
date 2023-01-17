@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { BsFillCartCheckFill, BsFillCartPlusFill } from 'react-icons/bs'
 import { getItem, setItem } from "../services/LocalStoreFuncs";
+import { Link } from "react-router-dom";
+import { ProductsArea } from "../css/style";
+import { Header } from "../Components/Header";
 
 export const Store = () => {
 
@@ -31,8 +34,8 @@ export const Store = () => {
 
     return (
         <div>
-            <h1>store</h1>
-            <div>
+            <Header />
+            <ProductsArea>
                 {
                     data.map((e) => (
                         <div key={e.id}>
@@ -53,7 +56,7 @@ export const Store = () => {
                         </div>
                     ))
                 }
-            </div>
+            </ProductsArea>
         </div>
     )
 }
