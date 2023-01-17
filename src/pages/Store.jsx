@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BsFillCartCheckFill, BsFillCartPlusFill } from 'react-icons/bs'
 import { getItem, setItem } from "../services/LocalStoreFuncs";
-import { Link } from "react-router-dom";
 import { ProductsArea } from "../css/style";
 import { Header } from "../Components/Header";
 
@@ -39,9 +38,9 @@ export const Store = () => {
                 {
                     data.map((e) => (
                         <div key={e.id}>
-                            <h4>{e.title}</h4>
                             <img src={e.thumbnail} alt="" />
-                            <h4>{e.price}</h4>
+                            <h4>{`${e.title}`}</h4>
+                            <h4>{`R$ ${e.price}`}</h4>
                             <button
                             onClick={() => handleClick(e)}
                             >

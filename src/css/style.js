@@ -6,8 +6,8 @@ gap: 50px;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-
-
+margin-bottom: 70px;
+margin-top: 30px;
 
 div {
     height: 320px;
@@ -19,11 +19,14 @@ div {
     align-items: center;
     padding: 20px;
 
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.135216);
+    border-radius: 8px;
+
     button {
         font-size: 25px;
         background: transparent;
         border: none;
-        color: crimson;
+        color: #0F52BA;
         cursor: pointer;
     }
 }
