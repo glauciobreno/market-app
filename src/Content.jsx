@@ -4,10 +4,12 @@ import { Store } from "./pages/Store";
 import { Cart } from "./pages/Cart";
 import { Login } from "./pages/Login";
 import { Profile } from "./pages/Profile";
+import { ProfileEdit } from "./pages/ProfileEdit";
 
 export const Content = () => {
   return (
     <Switch>
+      <Route exact path="/profile/edit" component={ProfileEdit}></Route>
       <Route exact path="/profile" component={Profile}></Route>
       <Route exact path="/cart" component={Cart} />
       <Route exact path="/store" component={Store} />
