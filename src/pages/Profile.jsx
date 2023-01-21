@@ -1,6 +1,11 @@
 import React from "react";
-import { Header } from "../Components/Header";
+import { getItem } from "../services/LocalStoreFuncs";
 
 export const Profile = () => {
-  return <div>Profile</div>;
+  const { name } = getItem("usuario");
+  return (
+    <div>
+      <p>{name}</p>
+    </div>
+  );
 };

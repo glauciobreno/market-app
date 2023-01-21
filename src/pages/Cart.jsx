@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { getItem, setItem } from "../services/LocalStoreFuncs";
 import { BsFillCartDashFill } from "react-icons/bs";
 import { ProductsArea } from "../css/style";
-import { Header } from "../Components/Header";
 
 export const Cart = () => {
   const [data, setData] = useState(getItem("carrinhoyt") || []);
@@ -16,7 +15,6 @@ export const Cart = () => {
   const sumTotal = data.reduce((acc, cur) => acc + cur.price, 0);
   return (
     <div>
-      <Header />
       <h3>{`Subtotal: R$ ${sumTotal}`}</h3>
       <ProductsArea>
         {data.map((e) => (
